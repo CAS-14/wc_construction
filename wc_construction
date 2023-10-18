@@ -1,0 +1,10 @@
+from flask import request
+
+import tools
+
+bp = tools.MyBlueprint("cons", "wc_construction", host="weirdcease.com")
+
+@bp.route("/")
+@bp.route("/home")
+def home():
+    return bp.render("home.html")
