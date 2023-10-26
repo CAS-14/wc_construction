@@ -1,3 +1,3 @@
-# www_template
+# wc_construction
 
-Template for my web server "modules"
+October 2023 under construction notice for weirdcease.com

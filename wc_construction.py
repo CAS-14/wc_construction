@@ -4,7 +4,6 @@ import tools
 
 bp = tools.MyBlueprint("cons", "wc_construction", host="weirdcease.com")
 
-@bp.route("/")
-@bp.route("/home")
-def home():
-    return bp.render("home.html")
+@bp.route("/<anything>")
+def home(anything):
+    return bp.render("construction.html")

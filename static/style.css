@@ -1,1 +1,113 @@
-/* hi */
+@font-face {
+    font-family: "Tilt Neon";
+    src: url("/cons/tiltneon.ttf");
+}
+
+:root {
+    --accent: #ff650b;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border: #3b3b3b solid 1px;
+}
+
+div.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2 {
+    animation: flicker 5s linear 0 infinite;
+    font-family: "Tilt Neon", "monospace";
+    color: var(--accent);
+}
+
+p, a {
+    font-family: "monospace";
+    color: var(--accent);
+}
+
+a:hover {
+    background-color: var(--accent);
+    color: black;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 100%;
+    }
+    5% {
+        opacity: 0%;
+    }
+    7% {
+        opacity: 100%;
+    }
+    10% {
+        opacity: 0%;
+    }
+    11% {
+        opacity: 100%;
+    }
+    19% {
+        opacity: 0%;
+    }
+    21% {
+        opacity: 100%;
+    }
+    22% {
+        opacity: 0%;
+    }
+    24% {
+        opacity: 100%;
+    }
+    27% {
+        opacity: 0%;
+    }
+    28% {
+        opacity: 100%;
+    }
+    37% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    58% {
+        opacity: 0%;
+    }
+    61% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 0%;
+    }
+    82% {
+        opacity: 100%;
+    }
+    93% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
