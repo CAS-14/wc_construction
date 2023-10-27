@@ -4,7 +4,7 @@
 }
 
 :root {
-    --accent: #ff650b;
+    --accent: #ff3c0b;
 }
 
 html, body {
@@ -43,6 +43,7 @@ div.links {
 h2 {
     font-family: "Tilt Neon", "monospace";
     color: var(--accent);
+    text-shadow: 2px 2px 3px var(--accent);
     animation-name: flicker;
     animation-duration: 5s;
     animation-iteration-count: infinite;
