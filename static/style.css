@@ -27,19 +27,26 @@ div.info {
     align-items: center;
     width: fit-content;
     height: fit-content;
-    border: #3b3b3b solid 1px;
+    border: #3b3b3b solid 2px;
+    border-radius: 5px;
+    padding: 30px;
+    background: url("/cons/scanlines.jpg") center no-repeat;
 }
 
 div.links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 75%;
 }
 
 h2 {
-    animation: flicker 5s linear 0 infinite;
     font-family: "Tilt Neon", "monospace";
     color: var(--accent);
+    animation-name: flicker;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, end);
 }
 
 p, a {
