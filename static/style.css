@@ -18,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 
 div.info {
@@ -43,11 +44,12 @@ div.links {
 h2 {
     font-family: "Tilt Neon", "monospace";
     color: var(--accent);
-    text-shadow: 2px 2px 3px var(--accent);
+    text-shadow: 0px 0px 4px var(--accent);
     animation-name: flicker;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(1, end);
+    margin: 0px;
 }
 
 p, a {
