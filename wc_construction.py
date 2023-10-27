@@ -6,5 +6,5 @@ bp = tools.MyBlueprint("cons", "wc_construction", host="weirdcease.com")
 
 @bp.route("/")
 @bp.route("/<anything>")
-def home(anything: None):
+def home(*args):
     return bp.render("construction.html")
